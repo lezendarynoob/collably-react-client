@@ -1,0 +1,84 @@
+
+header {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    width: 100vw;
+    padding: 5px;
+    background-color: #ffffff;
+}
+
+.logo span {
+    display: inline-block;
+    white-space: nowrap;
+}
+
+.logo img {
+    border-radius: 20%;
+}
+
+.motto {
+    grid-column: span 12;
+    text-align: center;
+    margin-top: 65px;
+}
+
+.cta {
+    grid-column: span 12;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.cta .svg-container {
+    background: url('../svg/design_team.svg') center no-repeat;
+    height: 200px;
+    margin-bottom: 40px;
+}
+
+h1 {
+    margin: 15px auto;
+}
+
+p {
+    margin: 25px;
+    text-align: left;
+}
+
+.cta span {
+    margin: 10px;
+}
+
+
+/* Media Queries */
+
+@media screen and (min-width: 768px){
+    .motto {
+        grid-column: span 6;
+        margin-top: 175px;
+        margin-right: 20px;
+    }
+
+    .cta {
+        grid-column: span 6;
+        margin-top: 175px;
+    }
+
+    html {
+        font-size: 19px;
+    }
+
+    .cta .svg-container {
+        height: 300px;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    html {
+        font-size: 25px;
+    }
+
+    h2 {
+        font-size: 40px;
+    }
+}
