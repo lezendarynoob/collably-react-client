@@ -49,6 +49,7 @@ a {
 ::placeholder {
     color: #555555;
     opacity: 1;
+    font-family: 'Poppins', sans-serif;
 }
 
 input:focus::placeholder {
@@ -65,4 +66,8 @@ input:-webkit-autofill {
 
 input:-webkit-autofill {
     -webkit-text-fill-color: #555555;
+}
+
+.App .Toastify__toast--error {
+    background: #BB2CD9;
 }

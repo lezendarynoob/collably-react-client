@@ -1,4 +1,4 @@
-.login header {
+.signup header {
     display: flex;
     justify-content: center;
     position: fixed;
@@ -7,20 +7,20 @@
     background-color: #ffffff;
 }
 
-.login .logo span {
+.signup .logo span {
     display: inline-block;
     white-space: nowrap;
 }
 
-.login .logo img {
+.signup .logo img {
     border-radius: 20%;
 }
 
-.login body {
+.signup body {
     overflow: hidden;
 }
 
-.login main {
+.signup main {
     width: 100vw;
     height: calc(100vh - 65px);
     position: fixed;
@@ -28,7 +28,7 @@
     overflow-y: scroll;
 }
 
-.login .container {
+.signup .container {
     grid-column: span 12;
     height: fit-content;
     text-align: center;
@@ -38,29 +38,34 @@
     border-radius: 10%;
 }
 
-.login input {
+.signup input, textarea {
     outline: none;
     width: 90%;
     border: 2px solid #222222;
     border-radius: 5%;
-    font-size: 1.2em;
+    font-size: 0.9em;
     padding: 5px;
     margin-bottom: 15px;
 }
 
-.login input:focus {
+.signup textarea {
+    height: 175px;
+    border-radius: 2%;
+}
+
+.signup input:focus {
     border: 3px solid #BB2CD9
 }
 
-.login p {
+.signup p {
     font-size: 1.1em;
 }
 
-.login hr {
+.signup hr {
     margin-top: 15px;
 }
 
-.login .btn {
+.signup .btn {
     border: none;
     border-radius: 5%;
     width: fit-content;
@@ -70,24 +75,24 @@
 /* Media Queries */
 
 @media screen and (min-width: 500px){
-    .login .container {
+    .signup .container {
         margin: 75px;
     }
 }
 
 @media screen and (min-width: 650px){
-    .login .container {
+    .signup .container {
         margin: 75px 125px;
     }
 }
 
 @media screen and (min-width: 875px){
-    .login .container {
+    .signup .container {
         margin: 75px auto;
         width: 500px;
     }
 
-    .login .h2 {
+    .signup .h2 {
         font-size: 40px;
     }
 
