@@ -5,6 +5,7 @@ import authCheck from './actions/authCheck';
 import './App.css';
 import Landing from './components/Landing';
 import Home from './components/Home';
+import Login from './components/Login';
 
 class App extends Component {
 
@@ -25,6 +26,7 @@ class App extends Component {
         <BrowserRouter>
           <Switch>
             <Route exact path = '/' component = {this.props.isAuthenticated ? Home : Landing} />
+            <Route path = '/login' component = {Login} />
           </Switch>
         </BrowserRouter>
       </div>

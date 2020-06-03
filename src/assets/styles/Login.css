@@ -1,0 +1,94 @@
+.login header {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    width: 100vw;
+    padding: 5px;
+    background-color: #ffffff;
+}
+
+.login .logo span {
+    display: inline-block;
+    white-space: nowrap;
+}
+
+.login .logo img {
+    border-radius: 20%;
+}
+
+.login body {
+    overflow: hidden;
+}
+
+.login main {
+    width: 100vw;
+    height: calc(100vh - 65px);
+    position: fixed;
+    bottom: 0;
+    overflow-y: scroll;
+}
+
+.login .container {
+    grid-column: span 12;
+    height: fit-content;
+    text-align: center;
+    background-color: #ffffff;
+    margin: 75px 20px;
+    border: 3px solid #222222;
+    border-radius: 10%;
+}
+
+.login input {
+    outline: none;
+    width: 90%;
+    border: 2px solid #222222;
+    border-radius: 5%;
+    font-size: 1.2em;
+    padding: 5px;
+    font-weight: 100;
+    margin-bottom: 15px;
+}
+
+.login input:focus {
+    border: 3px solid #BB2CD9
+}
+
+.login p {
+    font-size: 1.1em;
+}
+
+.login hr {
+    margin-top: 15px;
+}
+
+.login .btn {
+    border: none;
+    border-radius: 5%;
+    width: fit-content;
+}
+
+/* Media Queries */
+
+@media screen and (min-width: 500px){
+    .login .container {
+        margin: 75px;
+    }
+}
+
+@media screen and (min-width: 650px){
+    .login .container {
+        margin: 75px 125px;
+    }
+}
+
+@media screen and (min-width: 875px){
+    .login .container {
+        margin: 75px auto;
+        width: 500px;
+    }
+
+    .login .h2 {
+        font-size: 40px;
+    }
+
+}

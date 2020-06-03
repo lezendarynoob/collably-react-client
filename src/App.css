@@ -45,3 +45,24 @@ a {
     text-decoration: none;
     color: #000000;
 }
+
+::placeholder {
+    color: #555555;
+    opacity: 1;
+}
+
+input:focus::placeholder {
+    color: transparent;
+}
+
+textarea:focus::placeholder {
+    color: transparent;
+}
+
+input:-webkit-autofill {
+    box-shadow: 0 0 0px 1000px #ffffff inset;
+}
+
+input:-webkit-autofill {
+    -webkit-text-fill-color: #555555;
+}
