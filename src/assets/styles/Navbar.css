@@ -1,0 +1,44 @@
+.navbar {
+    height: 60px;
+    position: fixed;
+    width: 100vw;
+    bottom: 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    
+}
+
+.navbar a{
+    grid-column: span 3;
+}
+
+.navbar div {
+    height: 100%;
+    width: 100%;
+}
+
+.navbar #home{
+    background: url('../svg/home.svg') center no-repeat;
+}
+
+.navbar #search {
+    background: url('../svg/search.svg') center no-repeat;
+}
+
+.navbar #create {
+    background: url('../svg/create.svg') center no-repeat;
+}
+
+.navbar #profile {
+    background: url('../svg/profile.svg') center no-repeat;
+}
+
+/* Media Queries */
+
+@media screen and (min-width: 500px){
+    .navbar {
+        height: 65px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+}

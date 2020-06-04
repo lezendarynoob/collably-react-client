@@ -1,23 +1,27 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import logout from '../actions/logout';
+import Navbar from './Navbar';
+import '../assets/styles/Home.css';
 
 class Home extends Component {
+
+    state = {
+        loaded: false
+    }
+
 
     render() {
         return (
         <div className = 'home'>
-            <h1> Welcome </h1>
-            <button onClick = {this.props.logout}> logout </button>
+            <Navbar />
+            <main className = 'grid'>
+                
+            </main>
         </div>
         );
-    };
+    }
 }
 
-const mapDispatchToProps = (dispatch) => {
-    return {
-        logout: () => dispatch(logout())
-    }
-};
 
-export default connect(null, mapDispatchToProps)(Home);
+
+export default connect(null, null)(Home);

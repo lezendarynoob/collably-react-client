@@ -9,6 +9,9 @@ import Landing from './components/Landing';
 import Home from './components/Home';
 import Login from './components/Login';
 import SignUp from './components/SignUp';
+import Search from './components/Search';
+import Create from './components/Create';
+import Me from './components/Me';
 
 class App extends Component {
 
@@ -32,6 +35,9 @@ class App extends Component {
             <Route exact path = '/' component = {this.props.isAuthenticated ? Home : Landing} />
             <Route path = '/login' component = {Login} />
             <Route path = '/signup' component = {SignUp} />
+            <Route path = '/search' component = {this.props.isAuthenticated ? Search : null} />
+            <Route path = '/create' component = {this.props.isAuthenticated ? Create : null} />
+            <Route path = '/me' component = {this.props.isAuthenticated ? Me : null} />
           </Switch>
         </BrowserRouter>
       </div>

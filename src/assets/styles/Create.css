@@ -1,0 +1,17 @@
+.create body {
+    overflow: hidden;
+}
+
+.create main {
+    overflow-y: scroll;
+    height: calc(100vh - 60px);
+    width: 100vw;
+}
+
+/* Media Queries */
+
+@media screen and (min-width: 500px){
+    .create main {
+        height: calc(100vh - 65px);
+    }
+}

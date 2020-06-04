@@ -1,0 +1,17 @@
+.me body {
+    overflow: hidden;
+}
+
+.me main {
+    overflow-y: scroll;
+    height: calc(100vh - 60px);
+    width: 100vw;
+}
+
+/* Media Queries */
+
+@media screen and (min-width: 500px){
+    .me main {
+        height: calc(100vh - 65px);
+    }
+}
