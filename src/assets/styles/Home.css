@@ -8,6 +8,26 @@
     width: 100vw;
 }
 
+.home .card {
+    height: fit-content;
+    grid-column: span 6;
+    margin: 10px;
+    text-align: center;
+}
+
+.home h1 {
+    font-size: 15px;
+}
+
+.home p {
+    font-size: 10px;
+    text-align: left;
+}
+
+.home main {
+    grid-template-rows: max-content;
+}
+
 /* Media Queries */
 
 @media screen and (min-width: 500px){
