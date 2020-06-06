@@ -25,7 +25,7 @@
 }
 
 .home main {
-    grid-template-rows: max-content;
+    grid-template-rows: min-content max-content auto;
 }
 
 /* Media Queries */

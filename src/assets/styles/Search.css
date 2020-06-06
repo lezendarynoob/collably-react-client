@@ -6,7 +6,49 @@
     overflow-y: scroll;
     height: calc(100vh - 60px);
     width: 100vw;
+    overflow-x: hidden;
+    grid-auto-rows: min-content max-content auto;
 }
+
+.search form {
+    grid-column: span 12;
+    text-align: center;
+}
+
+.search #input {
+    width: 100vw;
+    height: 30px;
+    margin-bottom: 5px;
+}
+
+.search .taglist {
+    grid-column: span 12;
+    margin: 10px;
+    font-size: 13px;
+}
+
+.search .taglist button {
+    border: none;
+    margin:  5px;
+}
+
+.search #input input:focus {
+    border: 1px solid #000000;
+}
+
+.search .projectlist {
+    grid-column: span 12;
+}
+
+.search .card {
+    height: fit-content;
+    grid-column: span 6;
+    margin: 10px;
+    text-align: center;
+    font-size: 10px;
+}
+
+
 
 /* Media Queries */
 
